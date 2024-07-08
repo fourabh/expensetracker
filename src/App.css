@@ -1,114 +1,101 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #3b3b3b;
-  font-family: "Ubuntu", sans-serif;
-  overflow: hidden;
-}
-
 .App {
-  margin: 0;
-  padding: 5px;
-  height: 100vh;
-  width: 100vw;
-  background-color: #3b3b3b;
-}
-
-.herosection {
-  background-color: #626262;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem; /* Reduced gap */
-  height: 33vh;
-  width: 90vw;
-  border-radius: 5px;
-  margin-left: 3rem;
-}
-
-.wbE {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #9b9b9b;
-  border-radius: 5px;
-  color: #ffffff;
-  font-weight: 300;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 25vw;
-  height: 22vh;
-}
-.wbE h2 {
-  font-weight: 400;
-}
-.incomeBtn {
-  background: linear-gradient(90deg, #b5dc52 0%, #89e148 100%);
-  color: #ffffff;
-  border-radius: 11px;
-  font-weight: 400;
-  border: none;
-  padding: 6px;
-  height: 2rem;
-  width: 9rem;
-}
-.expenseBtn {
-  background: linear-gradient(90deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
-  color: #ffffff;
-  border-radius: 11px;
-  font-weight: 400;
-  border: none;
-  padding: 6px;
-  height: 2rem;
-  width: 9rem;
-}
-.main {
-  display: flex;
-  gap: 3rem;
-  margin-left: 3rem;
 }
 
-.recentT {
-  height: 40vh;
-  width: 55vw;
+.herosection {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 2rem;
+  gap: 2rem;
 }
-.recentT > div:nth-child(2) {
-  background-color: #ffffff;
-  height: 40vh;
-  width: 55vw;
+
+.wbE {
+  background-color: #555;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 40%;
+  /* text-align: left; */
+}
+
+.wbE h2 {
+  color: #fff;
+}
+
+.incomeBtn,
+.expenseBtn {
+  background-color: #4caf50;
+  padding: 0.5rem 1rem;
+  border: none;
   border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
 }
+
+.expenseBtn {
+  background-color: #f44336;
+}
+
+.incomeBtn:hover,
+.expenseBtn:hover {
+  opacity: 0.9;
+}
+
+.main {
+  width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recentT,
 .TExpenses {
-  height: 40vh;
-  width: 33vw;
+  width: 45%;
+  background-color: #444;
+  padding: 1rem;
+  border-radius: 10px;
 }
-.TExpenses > div:nth-child(2) {
-  background-color: #ffffff;
-  height: 40vh;
-  width: 33vw;
+
+.recentT h2,
+.TExpenses h2 {
+  color: #fff;
+}
+
+.listItem {
+  background-color: #555;
+  padding: 1rem;
   border-radius: 5px;
+  margin-bottom: 1rem;
 }
-.icon{
-  transform: scale(1.8);
+
+.listItem p {
+  margin: 0;
 }
-.closeBtn{
-  background-color: #FF3E3E;
+
+.icon {
+  background-color: #777;
   border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeBtn,
+.editBtn {
+  background-color: transparent;
   border: none;
-  height: 3rem;
-  width: 3rem;
-  color: white;
   cursor: pointer;
 }
-.editBtn{
-  background-color: #F4BB4A;
-  border-radius: 50%;
-  border: none;
-  height: 3rem;
-  width: 3rem;
-  color: white;
-  cursor: pointer;
+
+.closeBtn:hover,
+.editBtn:hover {
+  opacity: 0.7;
 }

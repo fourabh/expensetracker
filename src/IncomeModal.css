@@ -1,0 +1,36 @@
+/* IncomeModal.css */
+.modalContent {
+    background-color: #444;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 80%;
+    color: #fff;
+  }
+  
+  .modalContent h2 {
+    margin-top: 0;
+  }
+  
+  .modalContent input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .modalContent button {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modalContent .submitBtn {
+    background-color: #f4bb4a;
+    color: #000;
+  }
+  
+  .modalContent .cancelBtn {
+    background-color: #d9d9d9;
+    color: #000;
+  }
+  
